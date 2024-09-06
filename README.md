@@ -1,2 +1,2 @@
 # studio
-digital playground to express inspirion.
+digital playground to express inspiration.
