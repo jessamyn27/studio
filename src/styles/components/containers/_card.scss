@@ -1,0 +1,160 @@
+@use '../../utility/variables'as *;
+
+.card {
+    align-items: flex-start;
+    color: $color-grey-4;
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 0 0 15px;
+    padding: 15px;
+
+    &_inner {
+        align-items: flex-start;
+        background-color: $color-white;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 15px 30px;
+        width: 100%;
+    }
+
+    &_info {
+        align-items: flex-start;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        max-width: 500px;
+        padding-bottom: 10px;
+    }
+
+    &_title {
+        font-weight: $font-weight-semi-bold;
+    }
+
+    &_subtitle {
+        font-size: 18px;
+        font-weight: $font-weight-normal;
+    }
+
+    &_desc {
+        font-size: 14px;
+        font-weight: $font-weight-normal;
+    }
+
+
+    &_wrap {
+        max-width: 760px;
+        width: 100%;
+    }
+
+    &_images {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 15px 0 0 0;
+
+        &-wrapper {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+    }
+
+    &_image {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+        position: relative;
+        text-align: center;
+
+        &-btn {
+            border: 1px solid $color-grey-4;
+            border-radius: 10px;
+            cursor: pointer;
+            margin: 10px 0 0 0;
+            opacity: 1;
+            padding: 2px 8px;
+
+            &:hover {
+                background-color: $color-blue-4-solitude;
+                opacity: 1;
+            }
+
+            &-wrapper {
+                align-items: center;
+                column-gap: 20px;
+                display: flex;
+                justify-content: center;
+                width: 100%;
+            }
+
+            &--light {
+                color: $color-white;
+            }
+
+            &-label {
+                width: 100%;
+
+            }
+        }
+
+        &-btn-,
+        &-img {
+            width: 300px;
+        }
+
+        &-copied {
+            animation: 3s fadeInOut ease-out;
+            font-size: 14px;
+            position: absolute;
+            top: 22%;
+            left: 50%;
+            opacity: 0;
+            transform: translate(-50%, -50%);
+            align-content: center;
+            background-color: $color-blue-3-mystic;
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            transition-timing-function: ease-out;
+            width: 70px;
+            flex-wrap: wrap;
+        }
+
+        &-text--wrapper {
+            padding-top: 10px;
+        }
+
+        &-desc {
+            font-size: 12px;
+        }
+
+        &-size {
+            font-size: 12px;
+        }
+
+        &-type {
+            font-size: 12px;
+
+        }
+
+        // custom card image styling
+
+        &-logos {
+            margin: 10px 0;
+            padding: 20px 20px 70px;
+
+            .card_image-label:hover {
+                align-items: flex-end;
+                font-size: 20px;
+            }
+
+            img {
+                width: 300px;
+            }
+        }
+    }
+}

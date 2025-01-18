@@ -1,0 +1,76 @@
+// colors naming convention from https://www.color-blindness.com/color-name-hue/
+$color-black: #000000;
+
+$color-blue-1-zumthor: #EEF5FF;
+$color-blue-2-paper: #E8EDF2;
+$color-blue-3-mystic: #DCE1EB;
+$color-blue-4-solitude: #E3EFFF;
+$color-blue-5-tropical: #CBE1F9;
+$color-blue-6-dodger: #0076FF;
+$color-blue-7-tory: #0F4F99;
+$color-blue-8-egyptian: #114E99;
+$color-blue-9-cerulean: #073973;
+$color-blue-10-denim-opacity-30: #0f5db74d;
+
+$color-grey-1-athens: #F8F9FA;
+$color-grey-2-silver: #BFBFBF;
+$color-grey-3-nobel: #B3B3B3;
+$color-grey-4: #828282;
+$color-grey-5-charcoal: #484848;
+
+$color-red-alizarin: #D71F27;
+
+$color-white: #FFFFFF;
+
+$color-gradient-blue: linear-gradient(173deg, $color-blue-6-dodger 3.17%, $color-blue-9-cerulean 78.22%);
+
+$time-slow: 0.5s;
+$time-normal: 0.35s;
+$time-fast: 0.15s;
+
+$font-family-default: "DM Sans",
+san-serif;
+
+$font-weight-light: 200;
+$font-weight-semi-light: 300;
+$font-weight-normal: 500;
+$font-weight-semi-bold: 600;
+$font-weight-bold: 700;
+$font-weight-extra-bold: 800;
+
+$font-size-xs: 12px;
+$font-size-sm: 14px;
+$font-size-m: 16px;
+$font-size-l: 22px;
+$font-size-xl: 27px;
+
+$media-xxs: 360px;
+$media-xs: 640px;
+$media-s: 768px;
+$media-m: 1024px;
+$media-l: 1280px;
+$media-xl: 1440px;
+
+.is {
+    &-hidden {
+        display: none;
+    }
+
+    &-disabled {
+        opacity: 0.5;
+    }
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}

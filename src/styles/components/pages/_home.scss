@@ -1,0 +1,8 @@
+@use '../../utility/variables'as *;
+
+.home {
+    &_wrap {
+        height: 100%;
+        width: 100%;
+    }
+}

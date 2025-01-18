@@ -1,0 +1,13 @@
+@use '../../utility/variables'as *;
+
+.hero {
+    &_wrap {
+        align-items: flex-start;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 80%;
+        display: flex;
+        padding-top: 55px;
+    }
+}

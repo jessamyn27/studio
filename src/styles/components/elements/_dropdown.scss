@@ -1,0 +1,66 @@
+@use '../../utility/variables'as *;
+
+.dropdown {
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    background: $color-grey-1-athens;
+    border-radius: 8px;
+    border: 1px solid $color-grey-3-nobel;
+    width: 150px;
+
+    &_wrap {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    &:hover {
+        background: $color-blue-2-paper;
+        cursor: pointer;
+    }
+
+    >a {
+        display: flex;
+        justify-content: center;
+        width: 150px;
+
+        &::after {
+            content: "\f0d7";
+            display: block;
+            font-family: "Font Awesome 5 Free";
+            padding: 1px 0 0 5px;
+        }
+    }
+
+
+    ul {
+        background-color: $color-white;
+        display: none;
+        left: 60px;
+        padding: 5px 0;
+        position: absolute;
+        top: 192px;
+        border-radius: 8px;
+        box-shadow: 0px 2px 10px 0px rgba(55, 54, 54, 0.2392156863);
+        margin: 0;
+        width: 150px;
+        border-top: none;
+        z-index: 2;
+
+        li {
+            padding: 0 5px 3px 5px;
+            text-align: left;
+        }
+    }
+
+    ul.show {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+
+        li:hover {
+            background-color: $color-blue-3-mystic;
+        }
+    }
+}

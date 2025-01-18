@@ -1,0 +1,27 @@
+@use '../../utility/variables'as *;
+
+.button {
+    align-items: center;
+    border-radius: 8px;
+    display: flex;
+    height: 42px;
+    justify-content: center;
+    margin: 10px 0;
+    width: 300px;
+
+    &-primary {
+        background-color: $color-blue-8-egyptian;
+        border: 1px solid $color-blue-8-egyptian;
+        color: white;
+
+        &:hover {
+            background-color: $color-blue-9-cerulean;
+            border-color: $color-blue-9-cerulean;
+        }
+    }
+
+    &.disabled {
+        background-color: $color-blue-10-denim-opacity-30;
+        border-color: $color-blue-10-denim-opacity-30;
+    }
+}
