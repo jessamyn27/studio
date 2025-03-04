@@ -3,9 +3,17 @@ import { z } from 'zod';
 // zod type schema declaration based on data schema
 
 const ImageType = z.object({
-	url: z.string(),
-	fileType: z.string(),
-	alt: z.string(),
+	element: z.string(),
+	link: z.string(),
+	image: z.object({
+		url: z.string(),
+		fileType: z.string(),
+		alt: z.string(),
+	}),
+});
+
+const ImageTypes = z.object({
+	previews: ImageType,
 });
 
 const MenuType = z.array(
@@ -74,6 +82,7 @@ const CardType = z.object({
 	inputs: InputTypes,
 	buttons: ButtonTypes,
 	dropdowns: DropdownTypes,
+	images: ImageTypes,
 });
 
 const CardTypes = z.object({
@@ -83,6 +92,7 @@ const CardTypes = z.object({
 // extract the inferred zod type schema and export them to parent tsx components that will passed down data and types as props to child tsx components
 
 export type ImageType = z.infer<typeof ImageType>;
+export type ImageTypes = z.infer<typeof ImageTypes>;
 
 export type MenuType = z.infer<typeof MenuType>;
 

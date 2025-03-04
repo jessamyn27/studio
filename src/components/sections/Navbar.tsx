@@ -9,10 +9,10 @@ const Navbar = () => {
 					{/* containers / elements*/}
 					<ul className="navbar">
 						<li>
-							<Link linkData={data.links.logo}></Link>
+							<Link linkData={data.links.studio}></Link>
 						</li>
 						<li>
-							<Link linkData={data.links.home}></Link>
+							<Link linkData={data.links.me}></Link>
 						</li>
 					</ul>
 				</nav>

@@ -7,16 +7,17 @@
     height: 42px;
     justify-content: center;
     margin: 10px 0;
-    width: 300px;
+    width: 100%;
 
     &-primary {
-        background-color: $color-blue-8-egyptian;
-        border: 1px solid $color-blue-8-egyptian;
-        color: white;
+        background-color: $color-grey-1-athens;
+        border: 1px solid $color-grey-6-cinder;
+        border-radius: 25px;
+        color: $color-grey-6-cinder;
 
         &:hover {
-            background-color: $color-blue-9-cerulean;
-            border-color: $color-blue-9-cerulean;
+            background-color: $color-grey-2-silver;
+            // border-color: $color-blue-9-cerulean;
         }
     }
 

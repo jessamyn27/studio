@@ -18,11 +18,11 @@
 }
 html,
 body {
-  background-color: #CBE1F9;
-  color: #F8F9FA;
-  font-family: "DM Sans", sans-serif;
+  background-color: #E4E5E7;
+  color: #0C0D0D;
+  font-family: YakuHanJP, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", Meiryo, sans-serif;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 700;
   height: 100%;
   margin: 0;
   overflow-x: hidden;
@@ -46,7 +46,7 @@ a,
 a:active,
 a:hover,
 a:visited {
-  color: inherit;
+  color: #0C0D0D;
   text-decoration: none;
 }
 
@@ -75,16 +75,16 @@ p {
   height: 42px;
   justify-content: center;
   margin: 10px 0;
-  width: 300px;
+  width: 100%;
 }
 .button-primary {
-  background-color: #114E99;
-  border: 1px solid #114E99;
-  color: white;
+  background-color: #F8F9FA;
+  border: 1px solid #0C0D0D;
+  border-radius: 25px;
+  color: #0C0D0D;
 }
 .button-primary:hover {
-  background-color: #073973;
-  border-color: #073973;
+  background-color: #BFBFBF;
 }
 .button.disabled {
   background-color: rgba(15, 93, 183, 0.3019607843);
@@ -92,21 +92,20 @@ p {
 }
 
 .card {
-  align-items: flex-start;
-  color: #828282;
+  align-items: flex-end;
+  border-left: 1px solid #0C0D0D;
+  border-right: 1px solid #0C0D0D;
+  color: #0C0D0D;
   display: flex;
   justify-content: flex-start;
-  margin: 0 0 0 15px;
-  padding: 15px;
+  margin: 0 15px;
 }
 .card_inner {
   align-items: flex-start;
-  background-color: #FFFFFF;
-  border-radius: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 15px 30px;
+  padding: 10px 20px;
   width: 100%;
 }
 .card_info {
@@ -118,25 +117,22 @@ p {
   padding-bottom: 10px;
 }
 .card_title {
+  font-size: 16px;
   font-weight: 600;
 }
 .card_subtitle {
-  font-size: 18px;
-  font-weight: 500;
-}
-.card_desc {
   font-size: 14px;
   font-weight: 500;
 }
-.card_wrap {
-  max-width: 760px;
-  width: 100%;
+.card_desc {
+  font-size: 12px;
+  font-weight: 500;
 }
 .card_images {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 15px 0 0 0;
+  margin: 15px 0;
 }
 .card_images-wrapper {
   display: flex;
@@ -146,10 +142,19 @@ p {
 .card_image {
   align-items: center;
   display: flex;
+  filter: drop-shadow(6px 6px 12px rgba(0, 0, 0, 0.3));
   flex-direction: column;
   padding: 5px;
   position: relative;
   text-align: center;
+}
+.card_image img {
+  border: 1px solid #0C0D0D;
+  width: 150px;
+  filter: brightness(0.6);
+}
+.card_image img:hover {
+  filter: brightness(1);
 }
 .card_image-btn {
   border: 1px solid #828282;
@@ -315,11 +320,11 @@ p {
 }
 
 .hero_wrap {
-  align-items: flex-start;
+  align-items: flex-end;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  width: 80%;
+  width: 100%;
   display: flex;
   padding-top: 55px;
 }
@@ -331,9 +336,10 @@ p {
   width: 100%;
 }
 .navbar_wrap {
-  background-color: #EEF5FF;
-  box-shadow: 0px 0px 5px #B3B3B3;
-  color: #114E99;
+  background-color: #E4E5E7;
+  border-bottom: 1px solid #0C0D0D;
+  color: #0C0D0D;
+  color: #E4E5E7;
   display: flex;
   height: 55px;
   position: fixed;

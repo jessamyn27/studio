@@ -1,16 +1,18 @@
 @use '../../utility/variables'as *;
 
 .navbar {
-
     align-items: center;
     display: flex;
     flex-direction: row;
     width: 100%;
 
     &_wrap {
-        background-color: $color-blue-1-zumthor;
-        box-shadow: 0px 0px 5px $color-grey-3-nobel;
-        color: $color-blue-8-egyptian;
+        background-color: $color-grey-0-zircon;
+        border-bottom: 1px solid $color-grey-6-cinder;
+        color: $color-grey-6-cinder;
+        // background-color: $color-grey-6-cinder;
+        // border-bottom: 1px solid $color-grey-0-zircon;
+        color: $color-grey-0-zircon;
         display: flex;
         height: 55px;
         position: fixed;

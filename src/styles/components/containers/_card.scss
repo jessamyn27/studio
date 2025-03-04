@@ -1,21 +1,27 @@
 @use '../../utility/variables'as *;
 
 .card {
-    align-items: flex-start;
-    color: $color-grey-4;
+    align-items: flex-end;
+    border-left: 1px solid $color-grey-6-cinder;
+    border-right: 1px solid $color-grey-6-cinder;
+
+    color: $color-grey-6-cinder;
+    // border-left: 1px solid $color-grey-0-zircon;
+    // border-bottom: 1px solid $color-grey-0-zircon;
+    // color: $color-grey-0-zircon;
+
+
     display: flex;
     justify-content: flex-start;
-    margin: 0 0 0 15px;
-    padding: 15px;
+    margin: 0 15px;
+    // padding: 15px;
 
     &_inner {
         align-items: flex-start;
-        background-color: $color-white;
-        border-radius: 10px;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding: 15px 30px;
+        padding: 10px 20px;
         width: 100%;
     }
 
@@ -29,30 +35,31 @@
     }
 
     &_title {
+        font-size: 16px;
         font-weight: $font-weight-semi-bold;
     }
 
     &_subtitle {
-        font-size: 18px;
-        font-weight: $font-weight-normal;
-    }
-
-    &_desc {
         font-size: 14px;
         font-weight: $font-weight-normal;
     }
 
+    &_desc {
+        font-size: 12px;
+        font-weight: $font-weight-normal;
+    }
 
     &_wrap {
-        max-width: 760px;
-        width: 100%;
+        // border-left: 1px solid $color-grey-6-cinder;
+        // border-right: 1px solid $color-grey-6-cinder;
+        // width: 200px;
     }
 
     &_images {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        margin: 15px 0 0 0;
+        margin: 15px 0;
 
         &-wrapper {
             display: flex;
@@ -64,13 +71,24 @@
     &_image {
         align-items: center;
         display: flex;
+        filter: drop-shadow(6px 6px 12px rgba(0, 0, 0, .3));
         flex-direction: column;
         padding: 5px;
         position: relative;
         text-align: center;
 
+        img {
+            border: 1px solid $color-grey-6-cinder;
+            width: 150px;
+            filter: brightness(.6);
+
+            &:hover {
+                filter: brightness(1);
+            }
+        }
+
         &-btn {
-            border: 1px solid $color-grey-4;
+            border: 1px solid $color-grey-4-grey;
             border-radius: 10px;
             cursor: pointer;
             margin: 10px 0 0 0;

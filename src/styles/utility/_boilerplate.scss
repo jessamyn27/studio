@@ -2,11 +2,13 @@
 
 html,
 body {
-    background-color: $color-blue-5-tropical;
-    color: $color-grey-1-athens;
-    font-family: 'DM Sans', sans-serif;
+    background-color: $color-grey-0-zircon;
+    color: $color-grey-6-cinder;
+    // background-color: $color-grey-6-cinder;
+    // color: $color-grey-0-zircon;
+    font-family: YakuHanJP, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", Meiryo, sans-serif;
     font-size: $font-size-m;
-    font-weight: $font-weight-semi-bold;
+    font-weight: $font-weight-bold;
     height: 100%;
     margin: 0;
     overflow-x: hidden;
@@ -28,7 +30,8 @@ a,
 a:active,
 a:hover,
 a:visited {
-    color: inherit;
+    color: $color-grey-6-cinder;
+    // color: $color-grey-0-zircon;
     text-decoration: none;
 }
 

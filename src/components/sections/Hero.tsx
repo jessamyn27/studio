@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { heroData } from '../../data/heroData';
-import Card from '../containers/Card';
+import PreviewCard from '../containers/PreviewCard';
 
 const Hero = () => {
 	const [isClicked, setIsClicked] = useState<boolean>(false);
@@ -15,12 +15,42 @@ const Hero = () => {
 			{heroData.map((data) => (
 				<div key={data.title} className={data.title}>
 					{/* containers / elements */}
-					<Card
-						cardData={data.cards.heroCard}
+					<PreviewCard
+						cardData={data.cards.parallaxCard}
 						isClicked={isClicked}
 						isDisabled={isDisabled}
 						onSubmit={onSubmit}
-					></Card>
+					></PreviewCard>
+					<PreviewCard
+						cardData={data.cards.pacmanCard}
+						isClicked={isClicked}
+						isDisabled={isDisabled}
+						onSubmit={onSubmit}
+					></PreviewCard>
+					<PreviewCard
+						cardData={data.cards.frasierCard}
+						isClicked={isClicked}
+						isDisabled={isDisabled}
+						onSubmit={onSubmit}
+					></PreviewCard>
+					<PreviewCard
+						cardData={data.cards.astroidCard}
+						isClicked={isClicked}
+						isDisabled={isDisabled}
+						onSubmit={onSubmit}
+					></PreviewCard>
+					<PreviewCard
+						cardData={data.cards.tamagotchiCard}
+						isClicked={isClicked}
+						isDisabled={isDisabled}
+						onSubmit={onSubmit}
+					></PreviewCard>
+					<PreviewCard
+						cardData={data.cards.moodcastCard}
+						isClicked={isClicked}
+						isDisabled={isDisabled}
+						onSubmit={onSubmit}
+					></PreviewCard>
 				</div>
 			))}
 		</div>

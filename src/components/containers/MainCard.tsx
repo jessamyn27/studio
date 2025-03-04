@@ -1,5 +1,6 @@
 import type { CardType } from '../../types/types';
 import Button from '../elements/Button';
+import Image from '../elements/Image';
 import Input from '../elements/Input';
 import Dropdown from '../elements/Dropdown';
 
@@ -15,13 +16,17 @@ const Card = ({ cardData, isClicked, isDisabled, onSubmit }: Props) => {
 		<div className="card_wrap">
 			<div className={`card card_${cardData.name}`} id={cardData.name}>
 				<div className="card_inner">
-					<section className="card_info">
+					{/* <section className="card_info">
 						<h1 className="card_title">{cardData.title}</h1>
 						<h3 className="card_subtitle">{cardData.subtitle}</h3>
 						<p className="card_desc">{cardData.description}</p>
-					</section>
+					</section> */}
 					{/* elements */}
-					<Dropdown
+					<section className="card_image">
+						<Image imageData={cardData.images.previews}></Image>
+					</section>
+
+					{/* <Dropdown
 						dropdownData={cardData.dropdowns.icons}
 					></Dropdown>
 					<Input inputData={cardData.inputs.firstName}></Input>
@@ -29,13 +34,14 @@ const Card = ({ cardData, isClicked, isDisabled, onSubmit }: Props) => {
 					<Input inputData={cardData.inputs.email}></Input>
 					<Input inputData={cardData.inputs.dateOfBirth}></Input>
 					<Input inputData={cardData.inputs.phoneNumber}></Input>
+					<Image imageData={cardData.images.previews}></Image>
 
 					<Button
 						buttonData={cardData.buttons.submitRequest}
 						isClicked={isClicked}
 						isDisabled={isDisabled}
 						onSubmit={onSubmit}
-					></Button>
+					></Button> */}
 				</div>
 			</div>
 		</div>
